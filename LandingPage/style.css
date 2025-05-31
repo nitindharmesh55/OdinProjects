@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+.mainHeader{
+    background: #1f2937;
+    padding: 16px;
+    
+}
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+    color:#E5E7EB ;
+    font-size: 18px;
+}
+.logo{
+    font-size: 24px;
+    color: #F9FAF8;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.info h1{
+    color:#F9FAF8;
+    font-weight: 900;
+    font-size: 48px;
+    width: 370px;
+    margin-bottom: 0;
+}
+.info p{
+    font-size: 18px;
+    color: white;
+    width: 400px;
+    margin-top: 0;
+}
+.sign-up{
+    padding: 8px 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    background: #3286F2;
+    border: 0;
+    color: white;
+
+}
+.box{
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+    color: white;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.information h2{
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+}
+.box-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+.boxx{
+    height: 100px;
+    width: 100px;
+    border: 2px solid #3886F6;
+    border-radius: 5px;
+}
+.card p {
+    color:#1f2937;
+    font-size: 18px;
+    width: 110px;
+}
+
+.qoute{
+    background: rgb(189, 189, 189);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 300px;
+    /* flex-direction: column; */
+
+}
+.qoute i{
+    width: 450px;
+    color: #F9FAF8;
+    font-size: 18px;
+   
+    
+}
+small{
+    font-weight: 900;
+    text-align: left;
+    margin-top: 60px;
+}
+.call{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 50px;
+}
+.callToAction{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #3286F2;
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    
+}
+.para{
+    color: #F9FAF8;
+
+}
+.para h3{
+    margin-bottom: 0;
+}
+.para p{
+    margin-top: 2px;
+}
+.sign{
+    padding: 8px 16px;
+    background: transparent;
+    border: 0;
+    border: 2px solid #E5E7EB;
+    border-radius: 5px;
+    color: white;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1f2937;
+    color: #E5E7EB;
+    padding: 20px;
+}
