@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validations</title>
+</head>
+<body>
+    <form action="#" method="get">
+        <div>
+            <label for="user_mail">Email:</label>
+            <input type="email" name="user_mail" id="user_mail" required>
+        </div>
+        <br>
+        <div>
+            <label for="Name_fisrt">Name:</label>
+            <input type="text" minlength="4" maxlength="8" name="Name_fisrt">
+
+            <label for="usrePassword">PassWord:</label>
+            <input type="password" id="usrePassword" name="usrePassword" required>
+
+            <label for="Quantity">Quantity</label>
+            <div>
+                <input type="number" id="Quantity" name="Quantity" min="1" value="0" max="256">
+            </div>
+
+            <div>
+                <label for="zip_code">Postal / Zip Code:</label>
+            </div>
+
+            <input type="text" id="zip_code"
+            name="zip_code" pattern="(\d{5}([\-]\d{4})?)" required>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Forms</title>
+</head>
+
+<body>
+
+    <form action="https://httpbin.org/post" method="post">
+
+        <fieldset>
+            <legend>Person Details</legend>
+            <label for="Name">Name:</label>
+            <input type="text" name="name" id="Name" placeholder="Bob..">
+
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age">
+
+        </fieldset>
+
+
+        <h1>Ticket type</h1>
+        <div>
+            <input type="radio" name="ticket_type" id="child" value="child">
+            <label for="child">Child</label>
+        </div>
+
+        <div>
+            <input type="radio" name="ticket_type" id="Adult" value="Adult" checked>
+            <label for="Adult">Adult</label>
+        </div>
+
+        <div>
+            <input type="radio" name="ticket_type" id="senior" value="senior">
+            <label for="senior">Senior:</label>
+        </div>
+
+        <h1>Pizza Toppings</h1>
+        <div>
+            <input type="checkbox" name="topping" id="sausage" value="sausage">
+            <label for="sausage">Sausage</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="topping" id="onions" value="onions">
+            <label for="onions">Onions</label>
+        </div>
+        <div>
+            <input type="checkbox" name="topping" id="pepperoni" value="pepperoni">
+            <label for="pepperoni">Pepperoni</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="topping" id="mushrooms" value="mushrooms">
+            <label for="mushrooms">Mashrooms</label>
+        </div>
+
+
+        <!-- For Disscounts -->
+        <label for="Disscount">Disscount</label>
+        <select name="Disscount" id="Disscount">
+            <optgroup label="Adult">
+                <option value="20">Age:12 to 20</option>
+                <option value="30">Age:20 to 40</option>
+
+            </optgroup>
+
+            <optgroup label="Senior">
+                <option value="25">Age:45+</option>
+            </optgroup>
+
+        </select>
+
+
+        <!-- Fildeset contain inputs -->
+
+    </form>
+
+</body>
+
+</html>

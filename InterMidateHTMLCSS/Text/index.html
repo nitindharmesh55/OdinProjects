@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SElector</title>
+    <style>
+        /* if we want to select all the child and ggrand child from main */
+        main div{
+
+        }
+        /* With this we can select all of them */
+        /* but if we want to select the spsecific element child or grand child we can combinator selectoe; */
+
+        /* Lets suppose we want child */
+        main > div > div{}
+
+        /* If we want slect gorup 2 using group 1 */
+        .group1 + div{}
+
+        /* group3 */
+
+        .group1 + div + div{}
+        /*  */
+
+        /* Selected evertyhing */
+        .group1 ~ div{}
+
+        /* Add before and after emojis */
+
+        .Emoji::before{
+            content: "❤❤💛💚💙💜";
+        }
+        .Emoji::after{
+            content: "💟💝💝💝💘💘💘";
+        }
+    </style>
+</head>
+<body>
+    <main class="parent">
+        <div class="child group1">
+            <div class="grand-child group1"></div>
+        </div>
+
+        <div class="child group2">
+            <div class="grand-child group2"></div>
+        </div>
+
+        <div class="child group3">
+            <div class="grand-child group3"></div>
+        </div>
+    </main>
+
+    <!-- Before and after -->
+
+    <div> Let's <span class="Emoji">Emojify</span> this span</div>
+    
+</body>
+</html>

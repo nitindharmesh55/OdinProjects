@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Validations</title>
+    <style>
+        input{
+            border: 2px solid #000;
+            margin-bottom: 15px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        input:invalid{
+            border: 2px solid red;
+        }
+        input:valid{
+            border: 2px solid greenyellow;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="#" method="get">
+        <div>
+            <label for="email">Email</label>
+        </div>
+        <input type="email" name="email" id="email">
+
+        <div>
+            <label for="website">Website</label>
+        </div>
+        <input type="url" id="website"
+        name="website">
+        <button type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>

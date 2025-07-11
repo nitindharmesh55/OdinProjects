@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form</title>
+</head>
+<body>
+    
+    <!-- Basic Forms -->
+     <!--  -->
+    <!-- form it's like a container  but it contains the users inputs -->
+     <form action="example.com/path" method="post">
+        <!-- Action attribute:- it takes URL that tell form where it should send data!! -->
+
+        <!-- Method it will tell browser which HTTPs request method it use to submit the form -->
+         <!-- Post: use to change something from server side -->
+          <!-- GET: use to retrive data from the server side -->
+           <label for="first_name">First Name:</label>
+           <input type="text" id="first_name" placeholder="Bob.." name="first_name">
+     </form>
+
+
+
+     <!-- Seond Form -->
+      <form action="https://httpbin.org/post" method="post">
+        <div>
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" placeholder="Bob.." name="first_name">
+
+            <label for="last_Name">Last Name:</label>
+            <input type="text" id="last_Name" placeholder="Smith.." name="last_Name">
+
+            <label for="Age">Age:</label>
+            <input type="number" name="Age" id="Age" placeholder="21">
+
+            <label for="user_email">Email Address:</label>
+            <input type="email" id=" ">
+
+            <!-- For use Amount -->
+             <label for="Amount">Amount:</label>
+             <input type="number" id="Amount" name="Amount">
+
+             <!-- for Date input -->
+              <label for="dob">Date of Birth:</label>
+              <input type="date" id="dob" name="dob">
+
+              <!-- TextArea where user can give feed back -->
+               <textarea rows="20" cols="50">Some Initial Content</textarea>
+
+               <!-- Selection tabs -->
+                <!-- Spliting the select Groups -->
+                 <select name="Fashion">
+                  <optgroup label="clothing">
+                    <option value="T_shirt">T-shirt</option>
+                    <option value="Sweater">Sweater</option>
+                    <option value="Coat">Coats</option>
+                  </optgroup>
+                  <optgroup label="Foot-Wear">
+                    <option value="sneakers">Sneakers</option>
+                    <option value="Boots">Boots</option>
+                    <option value="Sandals">Sandals</option>
+                  </optgroup>
+                 </select>
+
+
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+
+
+      <div>
+        <label for="userName">What's Your Name:</label>
+        <input type="text" id="userName" name="userName" placeholder="name">
+        <button class="greet_btn">Greet Me</button>
+        <h1 class="Greet"></h1>
+      </div>
+
+      <script>
+        const greetBtn = document.querySelector(".greet_btn");
+        const heading = document.querySelector(".Greet");
+        const userInput = document.querySelector("#userName");
+        greetBtn.addEventListener("click", ()=>{
+            const value = userInput.value;
+            heading.textContent = `Hello ${value}`;
+        })
+        
+        </script>
+</body>
+</html>
