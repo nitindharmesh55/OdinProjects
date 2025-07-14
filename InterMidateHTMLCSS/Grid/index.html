@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Templates</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 75px 75px 75px;
+            grid-template-rows: 75px 75px;
+            gap: 32px;
+        }
+
+        .card {
+            background: lime;
+            border: 1px solid black;
+        }
+
+        .container {
+            display: grid;
+            /* grid-template-columns: 50px 50px 50px;
+            grid-template-rows: 50px 50px;
+        } */
+
+            /* grid-template:row/coulmn; */
+            grid-template-columns: 50px 50px;
+            grid-template-rows: 50px 50px;
+            grid-auto-rows: 10px;
+            gap: 10px;
+        }
+
+        .container>div {
+            border: 1px solid blue;
+        }
+
+        .newContainer {
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            gap: 10px;
+            margin-top: 5rem;
+        }
+
+        .newContainer>div {
+            background-color: orange;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .divContainer{
+            display: grid;
+            grid-template: 100px 100px 100px 100px 100px / 100px 100px 100px 100px 100px;
+            background: lime;
+        }
+        .room{
+            border: 5px solid white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #living{
+            grid-column: 1/7;
+            grid-row: 1 / 2;
+        }
+        #kitchen{
+            grid-column: 6  / 7;
+            grid-row: 2 / 6;
+        }
+        #bedroom{
+            grid-column: 3/ 8;
+            grid-row: 2 / 4;
+        }
+        #bathroom{
+            grid-column: 3 / 1;
+            grid-row: 2/ 6;
+        }
+        #closet{
+            grid-column: 3/ 6;
+            grid-row: 4 / 6;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+
+
+    <div class="newContainer">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+    <div class="divContainer">
+      <div class="room" id="living">Living Room
+      </div>
+      <div class="room" id="kitchen">Kitchen</div>
+      <div class="room" id="bedroom">Bedroom</div>
+      <div class="room" id="bathroom">Bathroom</div>
+      <div class="room" id="closet">closet</div>
+
+    </div>
+</body>
+
+</html>

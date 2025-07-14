@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dash</title>
+    <style>
+        .container{
+            display: inline-grid;
+            grid-template: repeat(3, 250px) / repeat( 3, 445px);
+            background: #000;
+            
+        }
+        .room{
+            border: 5px solid white;
+            color: white;
+        }
+        #project{
+            grid-column: 1 / 3;
+            grid-row: 1 / 4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+        }
+        #an{
+            grid-column: 3 / 4;
+            grid-row: 1 / 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+        }
+        #trend{
+            grid-column: 3 / 4;
+            grid-row: 3  / 4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="room" id="project">Projects</div>
+        <div class="room" id="an">Anouncement</div>
+        <div class="room" id="trend">Trending</div>
+
+    </div>
+    
+</body>
+</html>

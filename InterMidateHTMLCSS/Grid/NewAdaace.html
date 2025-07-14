@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:inline-grid;
+            grid-template: repeat(5, 200px) / repeat(5, 200px);
+            background: black;
+        }
+        .room{
+            border: 3px solid white;
+            color: white;
+        }
+        #living{
+            grid-column: 1 / 6;
+            grid-row: 1 / 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+        }
+        #kitchen{
+            grid-column: 4 / 6;
+            grid-row: 2 / 6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+        }
+        #Bedroom{
+            grid-column: 2 / 4;
+            grid-row: 2 / 4;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        #bathroom{
+            grid-column: 1 / 1;
+            grid-row: 2 /6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+        }
+        #closet{
+            grid-column: 2 / 4;
+            grid-row:4 / 6 ;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="room" id="living">Living</div>
+        <div class="room"  id="kitchen">Kitchen</div>
+        <div class="room" id="Bedroom">Bedroom</div>
+        <div class="room" id="bathroom">Bathroom</div>
+        <div class="room" id="closet">Closet</div>
+
+    </div>
+    
+</body>
+</html>
