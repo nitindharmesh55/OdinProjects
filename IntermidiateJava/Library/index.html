@@ -1,30 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Library</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Library</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- buttton add new Books -->
+   <button id="addBook">New Book</button>
+
+  <!-- a form for the new books details -->
+   <form action="#">
+    <div>
+      <div>
+        <label for="book">Book Name:</label>
+      </div>
+      <input type="text" name="title" id="book">
+    </div>
+
+    <div>
+      <div>
+        <label for="author">Author Name:</label>
+      </div>
+      <input type="text" name="author" id="author">
+    </div>
+
+
+    <div>
+      <div>
+        <label for="page">Number of Pages:</label>
+      </div>
+      <input type="number" name="Pages" id="page">
+    </div>
+         
+    <div>
+      <div>
+        <label for="read">Read</label>
+      </div>
+      <select id="read" name="read">
+        <option value="true">Yes</option>
+        <option value="false">Not Yet!</option>
+      </select>
+    </div>
+    <button type="submit" class="sub">Submit</button>
     
- <h1>My Books</h1>
- <div class="myBooks">
+   </form>
 
- </div>
- <table id="tableForm">
-    <tr>
-        <th>Book Name</th>
-        <th>Author</th>
-        <th>Pages</th>
-        <th>Read</th>
-    </tr>
- </table>
+   <div class="contentContainer"></div>
 
- <button class="add">Add to box</button>
-
-
-
-    <script src="app.js"></script>
+   <script src="app.js"></script>
+  
 </body>
 </html>

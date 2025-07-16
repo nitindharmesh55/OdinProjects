@@ -1,18 +1,75 @@
-table,td, tr, th{
-    border: 1px solid black;
-    
-}
-body{
-    display: flex;
+.Active{
+    background:gray;
+    display: inline-grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 100px 100px;
+    padding: 25px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    gap: 20px;
+    color:white;   
+    border-radius: 20px;
+    
 }
-button{
+input{
+    padding:10px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px rgb(174, 52, 255);
+}
+.sub{
+    width: 300px;
+    text-align: center;
     padding: 10px 15px;
-    background: rgb(66, 66, 252);
+    margin-left: 20px;
+    background: rgb(113, 113, 247);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 5px 6px 7px white;
+}
+
+
+
+.contentContainer{
+    display: inline-grid;
+    grid-template: 300px 300px 300px /   400px 400px 400px;
+    gap: 20px;
+    margin-top: 5rem;
+}
+.book{
+    border: 1px solid black;
+    text-align: center;
+    display: inline;
+
+    border-radius: 10px;
+     border-left:10px solid orange;
+     box-shadow: 2px 3px 5px black;
+
+}
+.remove{
+    padding: 10px 15px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+.toggle{
+    padding: 10px 15px;
+    background:green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+form{
+    display:none;
+}
+#addBook{
+    padding: 10px 15px;
+    background: rgb(96, 96, 255);
     color: white;
     border: none;
     border-radius: 5px;
+    position: absolute;
+    right: 10px;
 }
