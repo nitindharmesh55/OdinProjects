@@ -1,0 +1,44 @@
+body{
+    background: rebeccapurple;
+    font-family: cursive;
+    font-size: 12px;
+    color:white;
+    text-shadow: 2px 3px 5px black;
+}
+header ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    cursor: pointer;
+
+}
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 20px;
+}
+.about h1{
+ font-size: 30px;
+ width: 350px;    
+ 
+}
+.about p{
+    width: 350px;
+}
+.btn{
+    display: flex;
+    gap: 10px;
+}
+.btn button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+}
+#content img{
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
