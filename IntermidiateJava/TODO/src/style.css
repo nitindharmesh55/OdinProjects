@@ -1,0 +1,41 @@
+body{
+    background: lightblue;
+    font-family: cursive;
+}
+.create{
+    display:grid;
+    grid-template: repeat(2, 81px) / repeat(2,178px);
+
+    gap: 9px;
+}
+.mainContent{
+    margin-bottom: 20px;
+}
+input{
+    border-radius: 5px;
+    height: 20px;
+}
+button{
+    padding: 10px 20px;
+    background: white;
+    border: none;
+    color: black;
+    border-radius: 4px;
+}
+.todo{
+      display:grid;
+    grid-template: repeat(3, 69px) / repeat(4,188px);
+
+    gap: 3px;
+    border: 3px solid black;
+    margin: 10px;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.todo p {
+    background: white;
+    color: black;
+    padding: 2px;
+    border-radius: 5px;
+}
