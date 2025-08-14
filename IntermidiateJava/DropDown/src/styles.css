@@ -1,0 +1,61 @@
+body{
+    background: rebeccapurple;
+    color: white;
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.boxtt{
+    display: none;
+}
+.btnStyle{
+    width: 50px;
+    height: 10px;
+    background: black;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.page{
+    background: white;
+    width: 300px;
+    height: 50px;
+    color: black;
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+.page a{
+    color: black;
+    list-style: none;
+    text-decoration: none;
+}
+#close{
+    padding:10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    /* color: #000; */
+    font-weight: bold;
+    font-size: 15px;
+    color: red;
+    text-align: center;
+    border: none;
+}
